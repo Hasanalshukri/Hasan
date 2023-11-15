@@ -1,0 +1,93 @@
+/* css styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: wheat;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+main {
+  max-width: $desktop;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-item {
+  background-color: whitesmoke;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: calc(50% - 20px);
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.grid-item:last-child {
+  margin-right: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  font-size: 100%;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  main {
+      padding: 10px;
+  }
+  .grid-item {
+      width: 100%;
+      margin-right: 0px;
+  }
+}
+
+/* Media query for medium-sized screens (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-item {
+      width: calc(33.3333% - 20px);
+  }
+}
+
+/* Media query for larger screens (e.g., desktop) */
+@media (min-width: 1025px) {
+  .grid-item {
+      width: calc(25% - 20px);
+  }
+}
